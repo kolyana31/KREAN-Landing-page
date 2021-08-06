@@ -1,0 +1,105 @@
+
+
+.services{
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    &_head{
+        font-family: 'Ubuntu-bold';
+        font-size: 60px;
+        color: #303030;
+    }
+
+    &_subhead{
+        color: #787878;
+        font-family: 'Ubuntu-medium';
+        font-size: 30px;
+        margin-bottom: 6.7%;
+        
+        span{
+            position: relative;
+        
+            &::after{
+                @include half_underline;
+            }
+        }
+    }
+
+    &_head, &_subhead{
+        text-align: center;
+    }
+
+    &_list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin-bottom: 7%;
+
+        &_item{
+            display: flex;
+            width: 23%;
+            flex-basis: 450px;
+            flex-direction: column;
+            margin-bottom: 40px;
+
+            .item{
+                &_img{
+                    text-align: center;
+                    margin-bottom: 12.2%;
+                }
+                &_head{
+                    text-align: center;
+                    font-family: 'Ubuntu-bold';
+                    font-size: 46px;
+                    color: #787878;
+                    margin-bottom: 10.4%;
+                }
+                &_description{
+                    font-family: 'UniNeueRegularBook';
+                    font-size: 25px;
+                    color: #b4b4b4;
+                }
+            }
+        }
+    }
+
+    .get_in_touch{
+        text-align: center;
+
+        &_btn{
+            
+            button{
+                transition: 0.5s ease-out;
+                color: white;
+                font-family: 'UniNeueHeavyRegular';
+                font-size: 23px;
+                width: 300px;
+                text-transform: uppercase;
+                border-radius: 50px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                border-color: transparent;
+                background: linear-gradient(#5f407b,#4a50a8);
+
+                &:hover{
+                    filter: hue-rotate(-90deg);
+                }
+            }
+        }
+    }   
+}
+
+@media screen and (max-width:700px) {
+    .services_list_item{
+
+        .item{
+            &_img{
+                margin-bottom: 7%;
+            }
+            &_head{
+                margin-bottom: 6%;
+            }
+        }
+    }
+}

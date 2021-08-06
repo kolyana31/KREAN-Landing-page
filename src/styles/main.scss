@@ -1,0 +1,54 @@
+@import 'normalize.css';
+@import 'mixins.scss';
+@import 'modal.scss';
+
+@import 'header.scss';
+@import 'services.scss';
+@import 'works.scss';
+@import 'references.scss';
+@import 'contact.scss';
+@import 'footer.scss';
+
+@import 'fonts.scss';
+
+.container{
+    max-width: 1490px;
+    width: 100%;
+    padding: 0px 10px;
+    max-height: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:first-child{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.container-tighter{
+    max-width: 1220px;
+    width: 100%;
+    padding: 0px 10px;
+    max-height: 100%;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+$bg-color: white;
+
+body{
+    background-color: $bg-color;
+}
+
+.showuper{
+    @include showelement;
+}
+
+@media screen and (max-width: 600px) {
+    [id='rigth_arrow'], [id='left_arrow']{
+        display: none;
+    }
+}

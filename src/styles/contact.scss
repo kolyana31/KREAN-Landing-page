@@ -1,0 +1,75 @@
+
+.contact{
+    background-color: black;
+    position: relative;
+    padding-top: 60% * 100 / 740;
+    padding-bottom: 60% * 100 / 740;
+
+    &_header{
+        font-family: 'Ubuntu-bold';
+        font-size: 30px;
+        text-align: center;
+        color: white;
+
+        margin-bottom: 81% * 100 / 1100;
+    }
+
+    &_fields{
+
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        input{
+            width: 100%;
+            max-width: 100%;
+            border: 2px solid #c6c6c6;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            background-color: transparent;
+            color: #c6c6c6;
+            font-family: 'Ubuntu-light';
+            font-size: 21.45px;
+            padding-left: 40px;
+            padding-bottom: 30px;         
+
+            &:not(:last-child){
+                max-width:  550px;
+                margin-bottom: 145%*100/740;
+            }
+
+            &:last-child{
+                display: block;
+                margin-bottom: 73%*100/740;
+            }
+        }
+
+        &_btn_wraper{
+            display: flex;
+            button{
+                display: inline-block;
+                margin: auto;
+                font-family: 'UniNeueBoldRegular';
+                font-size: 30px;
+                color: white;
+                text-decoration: none;
+                cursor: pointer;
+                border: none;
+                background-color: #202020;
+                line-height: 17.55px;
+                padding: 32px 90px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1210px) {
+    .contact_fields{
+        input{
+            &:not(:last-child){
+                max-width:  100%;
+            }
+        }
+    }
+}

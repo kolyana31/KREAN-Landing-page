@@ -1,0 +1,83 @@
+.footer{
+    background: linear-gradient(90deg,#32377a,#452851);
+
+    padding: 70%*100/1920;
+
+    &>.container-tighter{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        &>div{
+            margin-bottom: 20px;
+        }
+    }
+
+    &_logo{
+        display: inline-block;
+        font-family: 'UniNeueBoldRegular';
+        font-size: 47px;
+        &>a{
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+        }
+    }
+
+    &_adress{
+        display: inline-block;
+        font-family: 'Ubuntu-medium';
+        font-size: 17px;
+        color: white;
+        &>span{
+            display: block;
+        }
+    }
+
+    &_contacts{
+        font-family: 'Ubuntu-bold';
+        font-size: 17px;
+        color: white;
+        display: inline-block;
+        &>div{
+            display: grid;
+            grid-template-columns: 40px 1fr;
+            grid-template-rows: 1fr;
+        }
+    }
+
+    &_socials{
+        display: inline-block;
+        text-align: end;
+
+        &_icons{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            &>a:not(:first-child){
+                margin-left: 20px;
+            }
+        }
+        &>span{
+            font-family: 'Ubuntu-light';
+            font-size: 12px;
+            color: white;
+            display: block;
+        }
+    }
+}
+
+@media screen and (max-width:720px) {
+    .footer{
+        &>.container-tighter{
+            justify-content: space-evenly;
+
+            &>div{
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

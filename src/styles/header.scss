@@ -1,0 +1,278 @@
+
+.header{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100vh;
+
+    background-image: url('../assets/images/header-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    &_content{
+        max-height: 100%;
+    }
+
+    &_menu{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        margin-bottom: 25%;
+        padding-top: 1%;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+
+        &_socials{
+            display: none;
+            flex-direction: row;
+            align-items: center;
+            & a{
+                &:not(:last-child){
+                    margin-right: 20px;
+                }
+            }
+        }
+
+        .burger{
+            margin: auto 0;
+            display: none;
+            position: relative;
+            width: 40px;
+            height: 40px;
+                        
+            span{
+                position: absolute;
+                display: block;
+                background-color: white;
+                width: 100%;
+                height: 6px;
+                transform-origin: center center;
+                transition: 0.3s ease-in-out;
+
+                &:last-child{
+                    bottom: 0px;
+                }
+
+                &:nth-child(2){
+                    top: 16px;
+                }
+
+            }
+
+            &_opened{
+                span:first-child{
+                    transform: translateY(14px) rotate(45deg);
+                }
+                span:last-child{
+                    transform: translateY(-20px) rotate(-45deg);
+                }
+
+                span:nth-child(2){
+                    transform: scaleX(0);
+                }
+            }
+        }
+
+        &_item{
+            font-family: 'Ubuntu-bold';
+            font-size: 25px;
+            opacity: 0;
+            animation: showup;
+            animation-delay: 0.5s;
+            animation-duration: 1s;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+            color: white;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        &_logo_wraper{
+            display: flex;
+        }
+
+        .logo{
+            font-family: 'UniNeueBlack';
+            font-size: 47px;
+            margin-left: 0;
+            margin-right: auto;
+        }
+
+        .link:not(:first-child){
+            margin-left: 4.32%;
+        }
+
+        &_links{
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+        }
+
+        
+        a{
+            position: relative;
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    &_heading, &_subheading{
+        text-align: center;
+        color:white;
+        opacity: 0;
+        animation: showup;
+        animation-delay: 0.5s;
+        animation-duration: 1s;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+    }
+
+    &_heading{
+        font-family: 'Ubuntu-bold';
+        font-size: 70px;
+    }
+
+    &_subheading{
+        font-family: 'Ubuntu-light';
+        font-size: 40px;
+    }
+
+    &_scrollicon{
+        margin-top: auto;
+        margin-bottom: 4.6%;
+        text-align: center;
+        opacity: 0;
+        animation: showup;
+        animation-delay: 0.5s;
+        animation-duration: 1s;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .fixed{
+        position: fixed;
+    }
+
+    .header{
+        padding-top: 60%;
+        .dropdown{
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            background-color: #202020;
+            width: 100%;
+            z-index: 20;
+            height: 100vh;
+            justify-content: flex-start;
+            top: 90px;
+            transform: translate(-100%);
+            padding-top: 45px;
+            transition: 0.4s;
+            & .link{
+                margin:0;
+                top: 0;
+                padding-left: 30px;
+                padding-right: 30px;
+                margin-bottom: 40px;
+
+                &>a{
+                    display: inline-block;
+                    width: 100%;
+                    border: 2px solid white;
+                    border-top: none;
+                    border-left: none;
+                    border-right: none;
+                    padding-bottom: 20px;
+                }
+            }
+
+            &_shown{
+                transition: 0.4s ease-in-out;
+                transform: translateY(0%);
+            }
+        }
+
+        &_menu{
+            z-index: 100;
+            background-color: #202020;
+            padding-top: 36px;
+            padding-bottom: 36px;
+            top: 0;
+            position: fixed;
+
+            .burger{
+                display: inline-block;
+            }
+
+            &_socials{
+                display: flex;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+
+            &_logo_wraper{
+                z-index: 100;
+                width: 100%;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+
+        }
+        
+        &_scrollicon{
+            margin-top: 40px;
+        }
+        
+        .container:first-child{
+            padding: 0;
+        }
+
+    }    
+}
+
+@media screen and (max-width:370px) {
+    .header{
+        padding-top: 80%;
+
+        &_heading{
+            font-size: 40px;
+        }
+
+        &_subheading{
+            font-size: 30px;
+        }
+
+        &_content{
+            max-height: 100%;
+        }
+    }
+}
+
+@media screen and (min-width:700px) {
+    .header_menu{
+        a::after{
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 50%;
+            width: 0%;
+            height: 2px;
+            background-color: rgb(98, 166, 255);
+            transform: translateX(-50%);
+            transition: 0.3s ease-out;
+        }
+    
+        a:hover::after{
+            width: 100%;
+        }
+    }
+
+}
