@@ -1,0 +1,350 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+ html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+  }
+  
+  /* Sections
+     ========================================================================== */
+  
+  /**
+   * Remove the margin in all browsers.
+   */
+  
+  body {
+    margin: 0;
+  }
+  
+  /**
+   * Render the `main` element consistently in IE.
+   */
+  
+  main {
+    display: block;
+  }
+  
+  /**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+  
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+  
+  /* Grouping content
+     ========================================================================== */
+  
+  /**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+  
+  hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+  }
+  
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+  
+  pre {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+  }
+  
+  /* Text-level semantics
+     ========================================================================== */
+  
+  /**
+   * Remove the gray background on active links in IE 10.
+   */
+  
+  a {
+    background-color: transparent;
+  }
+  
+  /**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+  
+  abbr[title] {
+    border-bottom: none; /* 1 */
+    text-decoration: underline; /* 2 */
+    text-decoration: underline dotted; /* 2 */
+  }
+  
+  /**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+  
+  b,
+  strong {
+    font-weight: bolder;
+  }
+  
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+  
+  code,
+  kbd,
+  samp {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+  }
+  
+  /**
+   * Add the correct font size in all browsers.
+   */
+  
+  small {
+    font-size: 80%;
+  }
+  
+  /**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+  
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  
+  sub {
+    bottom: -0.25em;
+  }
+  
+  sup {
+    top: -0.5em;
+  }
+  
+  /* Embedded content
+     ========================================================================== */
+  
+  /**
+   * Remove the border on images inside links in IE 10.
+   */
+  
+  img {
+    border-style: none;
+  }
+  
+  /* Forms
+     ========================================================================== */
+  
+  /**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+  
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+  }
+  
+  /**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+  
+  button,
+  input { /* 1 */
+    overflow: visible;
+  }
+  
+  /**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+  
+  button,
+  select { /* 1 */
+    text-transform: none;
+  }
+  
+  /**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+  
+  button,
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    -webkit-appearance: button;
+  }
+  
+  /**
+   * Remove the inner border and padding in Firefox.
+   */
+  
+  button::-moz-focus-inner,
+  [type="button"]::-moz-focus-inner,
+  [type="reset"]::-moz-focus-inner,
+  [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+  
+  /**
+   * Restore the focus styles unset by the previous rule.
+   */
+  
+  button:-moz-focusring,
+  [type="button"]:-moz-focusring,
+  [type="reset"]:-moz-focusring,
+  [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+  }
+  
+  /**
+   * Correct the padding in Firefox.
+   */
+  
+  fieldset {
+    padding: 0.35em 0.75em 0.625em;
+  }
+  
+  /**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+  
+  legend {
+    box-sizing: border-box; /* 1 */
+    color: inherit; /* 2 */
+    display: table; /* 1 */
+    max-width: 100%; /* 1 */
+    padding: 0; /* 3 */
+    white-space: normal; /* 1 */
+  }
+  
+  /**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+  
+  progress {
+    vertical-align: baseline;
+  }
+  
+  /**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+  
+  textarea {
+    overflow: auto;
+  }
+  
+  /**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+  
+  [type="checkbox"],
+  [type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+  }
+  
+  /**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+  
+  [type="number"]::-webkit-inner-spin-button,
+  [type="number"]::-webkit-outer-spin-button {
+    height: auto;
+  }
+  
+  /**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+  
+  [type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    outline-offset: -2px; /* 2 */
+  }
+  
+  /**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+  
+  [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  
+  /**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+  
+  ::-webkit-file-upload-button {
+    -webkit-appearance: button; /* 1 */
+    font: inherit; /* 2 */
+  }
+  
+  /* Interactive
+     ========================================================================== */
+  
+  /*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+  
+  details {
+    display: block;
+  }
+  
+  /*
+   * Add the correct display in all browsers.
+   */
+  
+  summary {
+    display: list-item;
+  }
+  
+  /* Misc
+     ========================================================================== */
+  
+  /**
+   * Add the correct display in IE 10+.
+   */
+  
+  template {
+    display: none;
+  }
+  
+  /**
+   * Add the correct display in IE 10.
+   */
+  
+  [hidden] {
+    display: none;
+  }
+@keyframes showup{0%{transform:translateY(15px);opacity:0}100%{transform:translateY(0px);opacity:1}}.FS__modal{display:none;position:fixed;width:100%;height:100vh;z-index:999999;background-color:rgba(0,0,0,.7);animation-name:closing;animation-duration:1s;animation-iteration-count:1;animation-direction:normal;animation-play-state:paused;animation-fill-mode:forwards}.FS__modal__container{width:97%;height:auto;max-width:1024px;background-color:#fff;margin:auto}.FS__modal__container__img{position:relative;max-width:100%;max-height:500px}.FS__modal__container__img img{width:100%;max-width:100%;max-height:500px}.FS__modal__container__info{display:flex;flex-direction:column;justify-content:center;padding-top:49px;padding-bottom:44px;padding-left:10px;padding-right:10px}.FS__modal__container__info__header{margin-left:auto;margin-right:auto}.FS__modal__container__info__header span{font-size:29px;font-family:"Ubuntu-bold";color:#787878}.FS__modal__container__info__content{max-width:888px;margin-top:15px;margin-left:auto;margin-right:auto}.FS__modal__container__info__content span{font-size:25px;font-family:"Ubuntu-light";color:#5f5f5f}.FS__modal__container__info__content span a{position:relative;text-decoration:none;color:#5f5f5f;text-transform:uppercase;size:25px;font-family:"Ubuntu-light"}.FS__modal__container__info__content span a::after{content:"";position:absolute;bottom:-1px;left:50%;width:0%;height:2px;background-color:#62a6ff;transform:translateX(-50%);transition:.3s ease-out}.FS__modal__container__info__content span a:hover::after{width:100%}.FS__modal__container__info__content .divide__line{width:100%;color:#cecece;margin-bottom:27px}.FS__modal__container__info__content .btn__wraper{display:flex}.FS__modal__container__info__content .btn__wraper #accept_modal_rule_btn{transition:.3s;margin-left:auto;margin-right:auto;font-family:"Ubuntu-bold";font-size:30px;text-transform:uppercase;border:2px solid #000;background-color:#2b7ddb;box-shadow:0px 7px 10px rgba(68,144,231,.7);color:#f5f5f5;border-radius:30px;padding:5px 15px}.FS__modal__container__info__content .btn__wraper #accept_modal_rule_btn:hover{background-color:#2cdb1c;box-shadow:0px 7px 10px rgba(63,218,122,.7);color:#292525;padding:2px 30px}@keyframes closing{0%{transform:scale(1)}50%{transform:scale(1.3);background-color:#ffffff00}100%{transform:scale(0);background-color:#ffffff00}}@media screen and (max-width: 600px){.FS__modal__container__info__header span{font-size:25px}.FS__modal__container__info__content span{font-size:20px}.FS__modal__container__info{padding:10px 10px}}.header{display:flex;flex-direction:column;flex-wrap:nowrap;height:100vh;background-image:url(/krean_landing/696169dda950600fde7d.png);background-repeat:no-repeat;background-size:cover;background-attachment:fixed}.header_content{max-height:100%}.header_menu{width:100%;margin-left:auto;margin-right:auto;padding:0;margin-bottom:25%;padding-top:1%;position:relative;display:flex;justify-content:space-between}.header_menu_socials{display:none;flex-direction:row;align-items:center}.header_menu_socials a:not(:last-child){margin-right:20px}.header_menu .burger{margin:auto 0;display:none;position:relative;width:40px;height:40px}.header_menu .burger span{position:absolute;display:block;background-color:#fff;width:100%;height:6px;transform-origin:center center;transition:.3s ease-in-out}.header_menu .burger span:last-child{bottom:0px}.header_menu .burger span:nth-child(2){top:16px}.header_menu .burger_opened span:first-child{transform:translateY(14px) rotate(45deg)}.header_menu .burger_opened span:last-child{transform:translateY(-20px) rotate(-45deg)}.header_menu .burger_opened span:nth-child(2){transform:scaleX(0)}.header_menu_item{font-family:"Ubuntu-bold";font-size:25px;opacity:0;animation:showup;animation-delay:.5s;animation-duration:1s;animation-direction:normal;animation-fill-mode:forwards;color:#fff;list-style:none;margin:0;padding:0}.header_menu_logo_wraper{display:flex}.header_menu .logo{font-family:"UniNeueBlack";font-size:47px;margin-left:0;margin-right:auto}.header_menu .link:not(:first-child){margin-left:4.32%}.header_menu_links{display:flex;justify-content:flex-end;width:100%}.header_menu a{position:relative;text-decoration:none;color:#fff}.header_heading,.header_subheading{text-align:center;color:#fff;opacity:0;animation:showup;animation-delay:.5s;animation-duration:1s;animation-direction:normal;animation-fill-mode:forwards}.header_heading{font-family:"Ubuntu-bold";font-size:70px}.header_subheading{font-family:"Ubuntu-light";font-size:40px}.header_scrollicon{margin-top:auto;margin-bottom:4.6%;text-align:center;opacity:0;animation:showup;animation-delay:.5s;animation-duration:1s;animation-direction:normal;animation-fill-mode:forwards}@media screen and (max-width: 700px){.fixed{position:fixed}.header{padding-top:60%}.header .dropdown{display:flex;flex-direction:column;position:fixed;background-color:#202020;width:100%;z-index:20;height:100vh;justify-content:flex-start;top:90px;transform:translate(-100%);padding-top:45px;transition:.4s}.header .dropdown .link{margin:0;top:0;padding-left:30px;padding-right:30px;margin-bottom:40px}.header .dropdown .link>a{display:inline-block;width:100%;border:2px solid #fff;border-top:none;border-left:none;border-right:none;padding-bottom:20px}.header .dropdown_shown{transition:.4s ease-in-out;transform:translateY(0%)}.header_menu{z-index:100;background-color:#202020;padding-top:36px;padding-bottom:36px;top:0;position:fixed}.header_menu .burger{display:inline-block}.header_menu_socials{display:flex;padding-left:30px;padding-right:30px}.header_menu_logo_wraper{z-index:100;width:100%;padding-left:30px;padding-right:30px}.header_scrollicon{margin-top:40px}.header .container:first-child{padding:0}}@media screen and (max-width: 370px){.header{padding-top:80%}.header_heading{font-size:40px}.header_subheading{font-size:30px}.header_content{max-height:100%}}@media screen and (min-width: 700px){.header_menu a::after{content:"";position:absolute;bottom:-1px;left:50%;width:0%;height:2px;background-color:#62a6ff;transform:translateX(-50%);transition:.3s ease-out}.header_menu a:hover::after{width:100%}}.services{padding-top:5%;padding-bottom:5%}.services_head{font-family:"Ubuntu-bold";font-size:60px;color:#303030}.services_subhead{color:#787878;font-family:"Ubuntu-medium";font-size:30px;margin-bottom:6.7%}.services_subhead span{position:relative}.services_subhead span::after{content:"";position:absolute;width:47%;height:2px;left:50%;bottom:-5px;background-color:#4a4a4a;transform:translateX(-50%)}.services_head,.services_subhead{text-align:center}.services_list{display:flex;flex-direction:row;justify-content:space-evenly;flex-wrap:wrap;margin-bottom:7%}.services_list_item{display:flex;width:23%;flex-basis:450px;flex-direction:column;margin-bottom:40px}.services_list_item .item_img{text-align:center;margin-bottom:12.2%}.services_list_item .item_head{text-align:center;font-family:"Ubuntu-bold";font-size:46px;color:#787878;margin-bottom:10.4%}.services_list_item .item_description{font-family:"UniNeueRegularBook";font-size:25px;color:#b4b4b4}.services .get_in_touch{text-align:center}.services .get_in_touch_btn button{transition:.5s ease-out;color:#fff;font-family:"UniNeueHeavyRegular";font-size:23px;width:300px;text-transform:uppercase;border-radius:50px;padding-top:15px;padding-bottom:15px;border-color:transparent;background:linear-gradient(#5f407b, #4a50a8)}.services .get_in_touch_btn button:hover{filter:hue-rotate(-90deg)}@media screen and (max-width: 700px){.services_list_item .item_img{margin-bottom:7%}.services_list_item .item_head{margin-bottom:6%}}.works{padding-top:4.2541436464%;background-color:#ebebeb}.works_header{font-family:"UniNeueHeavyRegular";font-size:30px;text-align:center;margin-bottom:4.4751381215%}.works_header span{position:relative;color:#787878}.works_header span::after{content:"";position:absolute;width:47%;height:2px;left:50%;bottom:-5px;background-color:#4a4a4a;transform:translateX(-50%)}.works_grid{display:flex}.works_grid_wraper{margin:auto;display:flex;justify-content:center;flex-direction:row;flex-wrap:wrap}.works_grid_wraper_column{display:flex;max-width:450px;flex-direction:column;margin-bottom:65px}.works_grid_wraper_column:nth-child(2){margin-left:60px;margin-right:60px}.works_grid_wraper_column .img_wraper{position:relative;max-width:450px}.works_grid_wraper_column .img_wraper[margined]{margin-bottom:65px}.works_grid_wraper_column .img_wraper img{max-width:100%;max-height:100%;object-fit:cover}.works_grid_wraper_column .img_wraper_annotation{position:absolute;z-index:10;color:#fff;font-size:30px;transition:.3s ease-out;width:100%;height:100%;opacity:0;top:0;left:0;background:linear-gradient(#5f407b, #4a50a8)}.works_grid_wraper_column .img_wraper_annotation_text{display:flex;flex-direction:column;position:absolute;left:11.5555555556%;bottom:80px}.works_grid_wraper_column .img_wraper_annotation span:first-child{font-family:"Ubuntu-bold"}.works_grid_wraper_column .img_wraper_annotation span:last-child{font-family:"Ubuntu-light"}.works_grid_wraper_column .img_wraper_annotation:hover{opacity:.9}@media screen and (max-width: 600px){.works_grid_wraper_column:nth-child(2){margin-left:auto;margin-right:auto}}.references{position:relative;padding-top:7%;padding-bottom:5.4545454545%}.references_header{font-family:"Ubuntu-bold";font-size:30px;text-align:center;margin-bottom:7.3636363636%}.references_header span{position:relative;color:#787878}.references_header span::after{content:"";position:absolute;width:47%;height:2px;left:50%;bottom:-5px;background-color:#4a4a4a;transform:translateX(-50%)}.references *[id=rigth_arrow],.references *[id=left_arrow]{position:absolute;display:flex;width:40px;height:100%;top:55%;transform:translateY(-50%);z-index:99}.references *[id=rigth_arrow] img,.references *[id=left_arrow] img{margin:auto}.references *[id=left_arrow]{left:1%}.references *[id=rigth_arrow]{right:1%}.references_slider_wraper{margin-bottom:7.6041666667%}.references .slider{position:relative}.references .slider_container{position:relative;width:100%;height:100%;overflow:hidden}.references .slider_track{display:flex;flex-direction:row;transition:.4s ease-out}.references .slider_block{display:flex;min-width:100%;flex-direction:row;align-items:center;justify-content:start}.references .slider_block_photo{position:relative;max-width:450px;margin-bottom:30px;margin-right:3%}.references .slider_block_photo img{max-width:100%}.references .slider_block_photo img:nth-child(2){position:absolute;width:100%;height:100%;background-repeat:no-repeat;left:0;top:0;transform:scale(1.1);z-index:-1}.references .slider_block_text{flex-basis:900px;max-width:966px}.references .slider_block_text_head{font-family:"Ubuntu-bold";font-size:30px;color:#303030;margin-bottom:2.65625%}.references .slider_block_text_description{font-family:"Ubuntu-light";font-size:25px;color:#5f5f5f}.references_logos{width:100%;display:flex;justify-content:space-evenly;flex-wrap:wrap}@media screen and (max-width: 600px){.slider_block{flex-wrap:wrap;justify-content:center}.references .slider_block_photo{margin:auto;margin-bottom:15px;margin-top:15px}.references *[id=rigth_arrow],.references *[id=left_arrow]{display:none}}.contact{background-color:#000;position:relative;padding-top:8.1081081081%;padding-bottom:8.1081081081%}.contact_header{font-family:"Ubuntu-bold";font-size:30px;text-align:center;color:#fff;margin-bottom:7.3636363636%}.contact_fields{display:flex;justify-content:space-between;flex-wrap:wrap}.contact_fields input{width:100%;max-width:100%;border:2px solid #c6c6c6;border-top:none;border-left:none;border-right:none;background-color:transparent;color:#c6c6c6;font-family:"Ubuntu-light";font-size:21.45px;padding-left:40px;padding-bottom:30px}.contact_fields input:not(:last-child){max-width:550px;margin-bottom:19.5945945946%}.contact_fields input:last-child{display:block;margin-bottom:9.8648648649%}.contact_fields_btn_wraper{display:flex}.contact_fields_btn_wraper button{display:inline-block;margin:auto;font-family:"UniNeueBoldRegular";font-size:30px;color:#fff;text-decoration:none;cursor:pointer;border:none;background-color:#202020;line-height:17.55px;padding:32px 90px}@media screen and (max-width: 1210px){.contact_fields input:not(:last-child){max-width:100%}}.footer{background:linear-gradient(90deg, #32377a, #452851);padding:3.6458333333%}.footer>.container-tighter{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:space-between;align-items:center}.footer>.container-tighter>div{margin-bottom:20px}.footer_logo{display:inline-block;font-family:"UniNeueBoldRegular";font-size:47px}.footer_logo>a{text-decoration:none;color:#fff;cursor:pointer}.footer_adress{display:inline-block;font-family:"Ubuntu-medium";font-size:17px;color:#fff}.footer_adress>span{display:block}.footer_contacts{font-family:"Ubuntu-bold";font-size:17px;color:#fff;display:inline-block}.footer_contacts>div{display:grid;grid-template-columns:40px 1fr;grid-template-rows:1fr}.footer_socials{display:inline-block;text-align:end}.footer_socials_icons{display:flex;flex-direction:row;justify-content:space-between}.footer_socials_icons>a:not(:first-child){margin-left:20px}.footer_socials>span{font-family:"Ubuntu-light";font-size:12px;color:#fff;display:block}@media screen and (max-width: 720px){.footer>.container-tighter{justify-content:space-evenly}.footer>.container-tighter>div{margin-bottom:20px}}@font-face{font-family:"Ubuntu-bold";src:url(/krean_landing/50114233a7432c29c43d.ttf)}@font-face{font-family:"Ubuntu-light";src:url(/krean_landing/c2bf1bb61db6c8149ae8.ttf)}@font-face{font-family:"UniNeueBlack";src:url(/krean_landing/f03324bdbf55a2cb5f36.ttf)}@font-face{font-family:"Ubuntu-medium";src:url(/krean_landing/90c045b7547db9275807.ttf)}@font-face{font-family:"UniNeueRegularBook";src:url(/krean_landing/a4519da7dd80cb688e22.ttf)}@font-face{font-family:"UniNeueHeavyRegular";src:url(/krean_landing/d61a3300ea1e3a914ed1.ttf)}@font-face{font-family:"UniNeueBoldRegular";src:url(/krean_landing/a4519da7dd80cb688e22.ttf)}.container{max-width:1490px;width:100%;padding:0px 10px;max-height:100%;height:100%;box-sizing:border-box;margin-left:auto;margin-right:auto}.container:first-child{display:flex;flex-direction:column}.container-tighter{max-width:1220px;width:100%;padding:0px 10px;max-height:100%;box-sizing:border-box;margin-left:auto;margin-right:auto}body{background-color:#fff}.showuper{opacity:0;animation:showup;animation-delay:.2s;animation-duration:.5s;animation-play-state:paused;animation-direction:normal;animation-fill-mode:forwards}@media screen and (max-width: 600px){[id=rigth_arrow],[id=left_arrow]{display:none}}
